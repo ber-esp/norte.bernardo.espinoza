@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de registro - Mi web.</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+
+    <form action="" method="get">
+        <p>
+            Nombre: <input type="text" name="nombre" maxlength="50" required />
+        </p>
+
+        <p>
+            Apellido: <input type="text" name="apellido" maxlength="50" required />
+        </p>
+
+        <p>
+            Sexo:  <input type="radio" name="sexo" id="hombre" value="hombre">
+
+            <label for="hombre">Hombre </label>
+
+            <input type="radio" name="sexo" id="mujer" value="mujer">
+
+            <label for="mujer">Mujer </label>
+        </p>
+
+        <p>
+            Correo: <input type="email" name="correo" required />
+        </p>
+
+        <p>
+            Poblacion: <select id="poblacion">
+                <option value="alicante">Alicante</option>
+                <option value="madrid">Madrid</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="valencia" selected>Valencia</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="descripcion">Descripción:</label>
+            <textarea name="descripcion" id="descripcion" rows="10" cols="70"></textarea>
+        </p>
+
+        <p>
+            <input type="checkbox" id="check1" name="check1" value="1" checked>
+            <label for="check1">Deseo recibir informacion sobre novedades y ofertas.</label>
+        </p>
+
+        <p>
+            <input type="checkbox" id="check2" name="check2" value="2">
+            <label for="check1">Declaro haber leido y aceptar las condiciones generales del programa y la normativa sobre proteccion de datos.</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" />
+        </p>
+    </form>
+</body>
+</html>
